@@ -25,6 +25,8 @@ function Navbar() {
           <button onClick={() => handleScroll('about')} className='px-4 py-2 rounded-full hover:bg-gray-700 transition'>About</button>
           <button onClick={() => handleScroll('projects')} className='px-4 py-2 rounded-full hover:bg-gray-700 transition'>Project</button>
           <button onClick={() => handleScroll('testimonial')} className='px-4 py-2 rounded-full hover:bg-gray-700 transition'>Testimonial</button>
+          <button onClick={() => handleScroll('contact')} className='px-4 py-2 rounded-full hover:bg-gray-700 transition'>Contact</button>
+
         </div>
 
         {/* Mobile Menu Button */}
@@ -44,6 +46,8 @@ function Navbar() {
           <button onClick={() => handleScroll('about')} className='px-4 py-2 rounded-full hover:bg-gray-700 w-3/4 text-center'>About</button>
           <button onClick={() => handleScroll('projects')} className='px-4 py-2 rounded-full hover:bg-gray-700 w-3/4 text-center'>Project</button>
           <button onClick={() => handleScroll('testimonial')} className='px-4 py-2 rounded-full hover:bg-gray-700 w-3/4 text-center'>Testimonial</button>
+          <button onClick={() => handleScroll('contact')} className='px-4 py-2 rounded-full hover:bg-gray-700 w-3/4 text-center'>Contact</button>
+
         </div>
       )}
     </nav>

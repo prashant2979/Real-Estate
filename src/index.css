@@ -8,3 +8,16 @@
 /* html {
   scroll-behavior: smooth;
 } */
+/* Basic light theme */
+body.light {
+  background-color: white;
+  color: #222;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Basic dark theme */
+body.dark {
+  background-color: #121212;
+  color: #ddd;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

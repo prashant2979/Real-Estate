@@ -5,7 +5,7 @@ import { assets } from '../assets/assets'; // Make sure header_img is exported h
 function Header() {
   return (
     <div
-      id="Header"
+      id="home"
       className="relative min-h-screen w-full bg-cover bg-center flex flex-col items-center justify-center overflow-hidden"
       style={{ backgroundImage: `url(${assets.header_img})` }}
     >

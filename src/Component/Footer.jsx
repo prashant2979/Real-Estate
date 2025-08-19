@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
-import './Footer.css';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import "./Footer.css";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const Footer = () => {
   const [theme, setTheme] = useState("dark");
@@ -46,10 +51,18 @@ const Footer = () => {
           <div>
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#testimonial">Testimonials</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#testimonial">Testimonials</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
 
@@ -60,11 +73,23 @@ const Footer = () => {
                 type="email"
                 placeholder="Your email"
                 value={email}
-                onChange={e => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
               <button type="submit">Subscribe</button>
             </form>
+
+            {/* Email link outside input */}
+            <p>
+              Email us at:{" "}
+              <a
+                href="mailto:contact@yourrealestate.com"
+                className="text-blue-600 underline"
+              >
+                contact@yourrealestate.com
+              </a>
+            </p>
+
             {error && <p className="error-msg">{error}</p>}
             {subscribed && <p className="success-msg">Thanks for subscribing!</p>}
           </div>
@@ -72,18 +97,42 @@ const Footer = () => {
           <div>
             <h3>Follow Us</h3>
             <div className="footer-social">
-              {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#!"
-                  className="social-icon"
-                  aria-label="social link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Icon />
-                </a>
-              ))}
+              <a
+                href="https://facebook.com/realestate"
+                className="social-icon"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://twitter.com/realestate"
+                className="social-icon"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://instagram.com/realestate"
+                className="social-icon"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://linkedin.com/in/realestate"
+                className="social-icon"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
           </div>
         </div>
